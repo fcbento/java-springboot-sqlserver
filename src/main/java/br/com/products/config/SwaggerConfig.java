@@ -1,4 +1,4 @@
-package br.com.produtos.config;
+package br.com.products.config;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import org.springframework.context.annotation.Bean;
@@ -24,7 +24,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.produtos"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.products"))
                 .paths(regex("/api.*"))
                 .build()
                 .apiInfo(metaInfo());
@@ -34,7 +34,7 @@ public class SwaggerConfig {
 
         ApiInfo apiInfo = new ApiInfo(
                 "Produtos API REST",
-                "API REST de cadastro e gerencimentos de produtos e pedidos.",
+                "REST API -  CRUD",
                 "1.0",
                 "Terms of Service",
                 new Contact("Felipe C. Bento", "https://www.linkedin.com/in/felipe-bento/",

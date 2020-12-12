@@ -1,4 +1,4 @@
-package br.com.produtos.models;
+package br.com.products.models;
 
 import com.sun.istack.NotNull;
 import lombok.Getter;
@@ -10,14 +10,14 @@ import javax.persistence.Id;
 
 @Getter
 @Setter
-@Entity(name = "CATEGORIA")
-public class Categoria {
+@Entity(name = "CATEGORY")
+public class Category {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private long categoriaId;
+    private long categoryId;
 
     @NotNull
-    private String nome;
+    private String name;
 
 }

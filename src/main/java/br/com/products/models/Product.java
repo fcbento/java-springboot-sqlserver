@@ -1,4 +1,4 @@
-package br.com.produtos.models;
+package br.com.products.models;
 
 import com.sun.istack.NotNull;
 import lombok.Getter;
@@ -9,25 +9,25 @@ import java.math.BigDecimal;
 
 @Getter
 @Setter
-@Entity(name = "PRODUTO")
-public class Produto {
+@Entity(name = "PRODUCT")
+public class Product {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private long produtoId;
+    private long productId;
 
     @NotNull
-    private String nome;
+    private String name;
 
     @NotNull
-    private int quantidade;
+    private int quantity;
 
     @NotNull
-    private BigDecimal valor;
+    private BigDecimal price;
 
     @NotNull
     @ManyToOne()
-    @JoinColumn(name = "categoriaId")
-    private Categoria categoria;
+    @JoinColumn(name = "categoryId")
+    private Category category;
 
 }
