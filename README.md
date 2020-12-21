@@ -11,7 +11,7 @@
 
 * Website: linkedin.com/in/felipe-bento
 * Github: [@fcbento](https://github.com/fcbento)
-* LinkedIn: [@felipe=bento](https://linkedin.com/in/felipe=bento)
+* LinkedIn: [@felipe=bento](https://linkedin.com/in/felipe-bento)
 
 ## Show your support
 
