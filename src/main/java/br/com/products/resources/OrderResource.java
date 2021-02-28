@@ -1,6 +1,6 @@
-package br.com.products.controllers;
+package br.com.products.resources;
 
-import br.com.products.models.Order;
+import br.com.products.domain.Order;
 import br.com.products.services.OrderService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/api")
 @Api(value="API REST - Orders")
-public class OrderController {
+public class OrderResource {
 
     @Autowired
     OrderService service;

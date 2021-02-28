@@ -1,6 +1,6 @@
 package br.com.products.services;
 
-import br.com.products.models.User;
+import br.com.products.domain.User;
 import br.com.products.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;

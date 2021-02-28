@@ -1,4 +1,4 @@
-package br.com.products.models;
+package br.com.products.domain;
 
 import com.sun.istack.NotNull;
 import lombok.Getter;

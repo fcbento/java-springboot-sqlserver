@@ -1,6 +1,6 @@
-package br.com.products.controllers;
+package br.com.products.resources;
 
-import br.com.products.models.User;
+import br.com.products.domain.User;
 import br.com.products.services.UserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/api")
 @Api(value="API REST - Users")
-public class UserController {
+public class UserResource {
 
     @Autowired
     UserService service;

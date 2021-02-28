@@ -1,6 +1,6 @@
-package br.com.products.controllers;
+package br.com.products.resources;
 
-import br.com.products.models.Category;
+import br.com.products.domain.Category;
 import br.com.products.services.CategoryService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/api")
 @Api(value="API REST - Category")
-public class CategoryController {
+public class CategoryResource {
 
     @Autowired
     CategoryService service;

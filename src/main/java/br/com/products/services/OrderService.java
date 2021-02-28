@@ -1,6 +1,6 @@
 package br.com.products.services;
 
-import br.com.products.models.Order;
+import br.com.products.domain.Order;
 import br.com.products.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
