@@ -3,6 +3,8 @@ package br.com.products.services;
 import br.com.products.domain.User;
 import br.com.products.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -18,8 +20,8 @@ public class UserService {
         repository.save(user);
     }
 
-    public List<User> list(){
-        return repository.findAll(Sort.by(Sort.Direction.DESC, "userId"));
+    public Page<User> list(Pageable page){
+        return repository.findAll(page);
     }
 
     public void delete(User user){

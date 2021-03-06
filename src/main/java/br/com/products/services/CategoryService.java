@@ -3,9 +3,9 @@ package br.com.products.services;
 import br.com.products.domain.Category;
 import br.com.products.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class CategoryService {
@@ -17,8 +17,8 @@ public class CategoryService {
         repository.save(categoria);
     }
 
-    public List<Category> list(){
-        return repository.findAll();
+    public Page<Category> list(Pageable page){
+        return repository.findAll(page);
     }
 
     public void delete(Category categoria){
