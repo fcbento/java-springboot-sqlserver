@@ -35,7 +35,6 @@ public class ProductResource {
     }
 
     @RequestMapping(method=RequestMethod.POST)
-
     public ResponseEntity<Void> save(@RequestBody Product product){
         Product obj = service.save(product);
 
